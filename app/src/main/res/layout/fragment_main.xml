@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:scrollbars="none"
+    android:layout_height="match_parent"
+    tools:context=".MainFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <com.alpha.femulator.circleview
+        android:id="@+id/dynamic_arc"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.alpha.femulator.CircularDaysLeftView
+        android:id="@+id/circular_days_left"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dynamic_arc" />
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/neumorphCardView3"
+        style="@style/Widget.Neumorph.CardView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:padding="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/dynamic_arc"
+        app:layout_constraintEnd_toEndOf="@+id/dynamic_arc"
+        app:layout_constraintStart_toStartOf="@+id/dynamic_arc"
+        app:layout_constraintTop_toTopOf="@+id/dynamic_arc"
+        app:neumorph_backgroundColor="@color/white"
+        app:neumorph_inset="12dp"
+        app:neumorph_insetBottom="12dp"
+        app:neumorph_insetEnd="12dp"
+        app:neumorph_insetStart="12dp"
+        app:neumorph_insetTop="12dp"
+        app:neumorph_lightSource="rightTop"
+        app:neumorph_shadowColorDark="#FAE0E9"
+        app:neumorph_shadowColorLight="#FAE0E9"
+        app:neumorph_shadowElevation="12dp"
+        app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
+        app:neumorph_shapeType="pressed">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp">
+
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@string/image"
+                android:src="@drawable/ic_menstrual" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/quicksand_bold"
+                android:gravity="center"
+                android:text="Menstrual Phase"
+                android:textColor="@color/use_blue_blue"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/neumorphCardView"
+        style="@style/Widget.Neumorph.CardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dynamic_arc"
+        app:neumorph_backgroundColor="@color/white"
+        app:neumorph_inset="20dp"
+        app:neumorph_insetBottom="5dp"
+        app:neumorph_insetEnd="1dp"
+        app:neumorph_insetStart="1dp"
+        app:neumorph_insetTop="5dp"
+        app:neumorph_shadowColorDark="@color/blue_50"
+        app:neumorph_shadowColorLight="@color/blue_50"
+        app:neumorph_shadowElevation="5dp"
+        app:neumorph_shapeType="pressed">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="19 Days till next period arrives."
+                android:textColor="@color/use_blue_blue"
+                android:textSize="20sp"
+                android:paddingHorizontal="20dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </soup.neumorphism.NeumorphCardView>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/neumorphCardView">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/neumorphCardView">
+
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/bmi"
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="150dp"
+                android:layout_height="105dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/neumorphCardView"
+                app:neumorph_backgroundColor="@color/white"
+                app:neumorph_inset="20dp"
+                app:neumorph_insetBottom="5dp"
+                app:neumorph_insetEnd="1dp"
+                app:neumorph_insetStart="1dp"
+                app:neumorph_insetTop="5dp"
+                app:neumorph_shadowColorDark="@color/pink_50"
+                app:neumorph_shadowColorLight="@color/pink_50"
+                app:neumorph_shadowElevation="5dp"
+                app:neumorph_shapeType="flat"
+                app:neumorph_strokeColor="@color/pink_200"
+                app:neumorph_strokeWidth="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/image"
+                        android:src="@drawable/ic_tick" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_card_red"
+                        android:backgroundTint="@color/pink_100"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/cheeck_bmi"
+                        android:textColor="@color/use_blue_blue"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/pp"
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="150dp"
+                android:layout_height="105dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/neumorphCardView"
+                app:neumorph_backgroundColor="@color/white"
+                app:neumorph_inset="20dp"
+                app:neumorph_insetBottom="5dp"
+                app:neumorph_insetEnd="1dp"
+                app:neumorph_insetStart="1dp"
+                app:neumorph_insetTop="5dp"
+                app:neumorph_shadowColorDark="@color/pink_50"
+                app:neumorph_shadowColorLight="@color/pink_50"
+                app:neumorph_shadowElevation="5dp"
+                app:neumorph_shapeType="flat"
+                app:neumorph_strokeColor="@color/pink_200"
+                app:neumorph_strokeWidth="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/image"
+                        android:src="@drawable/ic_pp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_card_red"
+                        android:backgroundTint="@color/pink_100"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Ping Partner"
+                        android:textColor="@color/use_blue_blue"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/history_"
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="150dp"
+                android:layout_height="105dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/neumorphCardView"
+                app:neumorph_backgroundColor="@color/white"
+                app:neumorph_inset="20dp"
+                app:neumorph_insetBottom="5dp"
+                app:neumorph_insetEnd="1dp"
+                app:neumorph_insetStart="1dp"
+                app:neumorph_insetTop="5dp"
+                app:neumorph_shadowColorDark="@color/pink_50"
+                app:neumorph_shadowColorLight="@color/pink_50"
+                app:neumorph_shadowElevation="5dp"
+                app:neumorph_shapeType="flat"
+                app:neumorph_strokeColor="@color/pink_200"
+                app:neumorph_strokeWidth="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/image"
+                        android:src="@drawable/ic_history" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_card_red"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:backgroundTint="@color/pink_100"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Log"
+                        android:textColor="@color/use_blue_blue"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/history"
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="150dp"
+                android:layout_height="105dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/neumorphCardView"
+                app:neumorph_backgroundColor="@color/white"
+                app:neumorph_inset="20dp"
+                app:neumorph_insetBottom="5dp"
+                app:neumorph_insetEnd="1dp"
+                app:neumorph_insetStart="1dp"
+                app:neumorph_insetTop="5dp"
+                app:neumorph_shadowColorDark="@color/pink_50"
+                app:neumorph_shadowColorLight="@color/pink_50"
+                app:neumorph_shadowElevation="5dp"
+                app:neumorph_shapeType="flat"
+                app:neumorph_strokeColor="@color/pink_200"
+                app:neumorph_strokeWidth="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/image"
+                        android:src="@drawable/ic_ea" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_card_red"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Early Arrival"
+                        android:backgroundTint="@color/pink_100"
+                        android:textColor="@color/use_blue_blue"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Hygenic habits during periods:"
+        android:textColor="@color/use_blue_blue"
+        android:textSize="18sp"
+        android:gravity="start"
+        android:layout_marginStart="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="0dp"
+        android:paddingEnd="0dp"
+        android:layout_marginBottom="20dp"
+        android:scrollbars="none"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/neumorphCardView">
+
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/clean"
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/neumorphCardView"
+                app:neumorph_backgroundColor="@color/white"
+                app:neumorph_inset="20dp"
+                app:neumorph_insetBottom="5dp"
+                app:neumorph_insetEnd="1dp"
+                app:neumorph_insetStart="1dp"
+                app:neumorph_insetTop="5dp"
+                app:neumorph_shadowColorDark="@color/blue_50"
+                app:neumorph_shadowColorLight="@color/blue_50"
+                app:neumorph_shadowElevation="5dp"
+                app:neumorph_shapeType="flat"
+                app:neumorph_strokeColor="@color/use_blue_blue"
+                app:neumorph_strokeWidth="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/image"
+                        android:src="@drawable/ic_stars" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_card_red"
+                        android:backgroundTint="@color/use_blue_blue"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Clean"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/shower"
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/neumorphCardView"
+                app:neumorph_backgroundColor="@color/white"
+                app:neumorph_inset="20dp"
+                app:neumorph_insetBottom="5dp"
+                app:neumorph_insetEnd="1dp"
+                app:neumorph_insetStart="1dp"
+                app:neumorph_insetTop="5dp"
+                app:neumorph_shadowColorDark="@color/blue_50"
+                app:neumorph_shadowColorLight="@color/blue_50"
+                app:neumorph_shadowElevation="5dp"
+                app:neumorph_shapeType="flat"
+                app:neumorph_strokeColor="@color/use_blue_blue"
+                app:neumorph_strokeWidth="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/image"
+                        android:src="@drawable/ic_shower" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_card_red"
+                        android:backgroundTint="@color/use_blue_blue"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Shower Daily"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/pads"
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/neumorphCardView"
+                app:neumorph_backgroundColor="@color/white"
+                app:neumorph_inset="20dp"
+                app:neumorph_insetBottom="5dp"
+                app:neumorph_insetEnd="1dp"
+                app:neumorph_insetStart="1dp"
+                app:neumorph_insetTop="5dp"
+                app:neumorph_shadowColorDark="@color/blue_50"
+                app:neumorph_shadowColorLight="@color/blue_50"
+                app:neumorph_shadowElevation="5dp"
+                app:neumorph_shapeType="flat"
+                app:neumorph_strokeColor="@color/use_blue_blue"
+                app:neumorph_strokeWidth="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/image"
+                        android:src="@drawable/ic_pad" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_card_red"
+                        android:backgroundTint="@color/use_blue_blue"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Log"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/ex"
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/neumorphCardView"
+                app:neumorph_backgroundColor="@color/white"
+                app:neumorph_inset="20dp"
+                app:neumorph_insetBottom="5dp"
+                app:neumorph_insetEnd="1dp"
+                app:neumorph_insetStart="1dp"
+                app:neumorph_insetTop="5dp"
+                app:neumorph_shadowColorDark="@color/blue_50"
+                app:neumorph_shadowColorLight="@color/blue_50"
+                app:neumorph_shadowElevation="5dp"
+                app:neumorph_shapeType="flat"
+                app:neumorph_strokeColor="@color/use_blue_blue"
+                app:neumorph_strokeWidth="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/image"
+                        android:src="@drawable/ic_ex" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_card_red"
+                        android:backgroundTint="@color/use_blue_blue"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Early Arrival"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">femulator</string>
+    <string name="image">" "</string>
+    <string name="predict">Predict</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="proceed">Proceed</string>
+    <string name="welcome_to_syno">Welcome to Femulator.</string>
+    <array name="menuOptions">
+        <item>Home</item>
+        <item>Privacy policy</item>
+        <item>About Syno</item>
+        <item>Share</item>
+        <item>About Developers</item>
+        <item>Terms &amp; Conditions</item>
+        <item>Delete Account</item>
+    </array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cheeck_bmi">Cheeck BMI</string>
+</resources>
