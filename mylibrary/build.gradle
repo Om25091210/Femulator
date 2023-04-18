@@ -36,4 +36,5 @@ dependencies {
     implementation 'de.hdodenhof:circleimageview:3.1.0'
     //neumorphism
     implementation 'com.github.fornewid:neumorphism:0.3.0'
+
 }

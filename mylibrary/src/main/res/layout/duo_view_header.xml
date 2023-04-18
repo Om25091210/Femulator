@@ -26,11 +26,11 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/duo_view_header_text_title"
         android:layout_marginStart="32dp"
-        android:text="Give yourself some care"
         android:fontFamily="@font/quicksand_bold"
+        android:text="Female Menstrual Calculator"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="@color/use_blue_blue"
-        android:textStyle="normal"/>
+        android:textStyle="normal" />
 
     <LinearLayout
         android:id="@+id/linearLayout4"

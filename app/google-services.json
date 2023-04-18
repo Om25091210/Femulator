@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "919720034522",
+    "project_id": "femulator-3e496",
+    "storage_bucket": "femulator-3e496.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:919720034522:android:d6076236d7844db7dba5e3",
+        "android_client_info": {
+          "package_name": "com.alpha.femulator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "919720034522-v5bf8qbc5b2q3nojpgo09s4osv7o1pkc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.alpha.femulator",
+            "certificate_hash": "cf388bb7fa6f7ea09ceb2c9b0d8493204dfae0aa"
+          }
+        },
+        {
+          "client_id": "919720034522-2d6f2o0e6v3mbcmr9vtq8rl3qrfen393.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByL5kxbFHQIyCKgRiHjp8Z2OvAdaJBaNM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "919720034522-2d6f2o0e6v3mbcmr9vtq8rl3qrfen393.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

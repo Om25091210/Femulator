@@ -9,13 +9,45 @@
     <array name="menuOptions">
         <item>Home</item>
         <item>Privacy policy</item>
-        <item>About Syno</item>
+        <item>About Femulator</item>
         <item>Share</item>
         <item>About Developers</item>
         <item>Terms &amp; Conditions</item>
-        <item>Delete Account</item>
+        <item>Add Partner</item>
     </array>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="cheeck_bmi">Cheeck BMI</string>
+    <string name="shower_head">The Importance of Daily Showers During Periods</string>
+    <string name="shower_body">During menstruation, it is important to maintain proper hygiene to prevent infections and odors. One of the most important steps in maintaining hygiene during periods is to take a daily shower. Taking a shower daily not only helps to wash away any menstrual blood or discharge but also keeps the genital area clean and fresh. Warm water helps to relax the muscles and relieve cramps, making it a good way to soothe menstrual discomfort. Moreover, it helps to reduce the risk of bacterial infections such as bacterial vaginosis and urinary tract infections. It is recommended to use a mild, fragrance-free soap while showering and avoid using harsh or scented products which can cause irritation or dryness. It is also important to use clean towels and change them regularly during periods. Taking a daily shower during periods can also help in boosting one\'s self-esteem and confidence, especially during those days when one may feel uncomfortable or self-conscious. It is a simple and effective way to feel fresh and clean throughout the day. In conclusion, taking a daily shower is essential during periods to maintain proper hygiene, reduce the risk of infections, and boost self-confidence. It is important to make it a part of your daily routine to ensure good health and well-being.</string>
+    <string name="pads_head">The Importance of Regularly Changing Pads and Tampons During Your Period.</string>
+    <string name="pads_body">As a woman, it is important to take care of your menstrual hygiene during your period. One of the most important things you can do to stay clean and healthy during your period is to regularly change your pads and tampons. When you wear a pad or tampon for too long, it can become saturated with blood, creating a breeding ground for bacteria. This can lead to unpleasant odors and even infections. It is recommended that you change your pad or tampon every four to six hours to prevent this from happening. Not only does changing your pads and tampons regularly help to prevent infections and odors, but it also helps to keep you feeling fresh and comfortable throughout the day. You would not want to feel damp or uncomfortable during your period, and regularly changing your pads and tampons can prevent that from happening. Additionally, choosing the right size of pad or tampon is important to ensure proper absorption and prevent leaks. It is important to experiment with different sizes and brands to find what works best for you and your flow. In conclusion, regularly changing your pads and tampons is crucial for maintaining good menstrual hygiene. It helps prevent infections, odors, and discomfort, allowing you to feel fresh and comfortable during your period. Don\'t neglect this important aspect of your menstrual care routine.</string>
+    <string name="excercise_head">Why It\'s Important to Stay Active and Exercise During Your Period.</string>
+    <string name="excercise_body">Staying active and maintaining a regular exercise routine can be challenging during your period, but its essential for your overall health and well-being. While many women feel like curling up in bed and avoiding any strenuous activity during their menstrual cycle, regular exercise can actually help alleviate cramps, boost mood, and reduce stress. Exercising releases endorphins, the bodys natural pain relievers, which can help relieve menstrual cramps and headaches. Additionally, physical activity can also help regulate hormones and promote healthy blood flow, which can decrease the duration and intensity of your period. Its important to listen to your body and adjust your exercise routine to fit your needs during your period. For some women, light stretching or yoga can be beneficial for easing cramps and promoting relaxation. Others may prefer more vigorous exercise, such as running or weightlifting, to help reduce stress and boost energy levels. When exercising during your period, its important to wear comfortable and breathable clothing, and to stay hydrated by drinking plenty of water. If you experience heavy bleeding, you may want to wear a pad or tampon designed for exercise to prevent leaks. In conclusion, regular exercise during your period can have a positive impact on your physical and emotional health. Its important to find an exercise routine that works for you and to listen to your bodys needs. With a little planning and self-care, you can stay active and healthy during your period.</string>
+    <string name="clean_content">Staying Clean and Fresh During Your Menstrual Cycle.</string>
+    <string name="clean_content_body">A menstrual cycle is a natural process that every woman goes through. It can be a challenging time for some, as it comes with discomfort, cramps, and the responsibility of staying clean. Keeping oneself clean and fresh during periods is essential to maintain good hygiene and health.One of the easiest ways to stay clean during periods is by changing sanitary pads or tampons every four to six hours. This is to avoid bacterial growth and unpleasant odors. Make sure to dispose of used pads and tampons properly, in designated bins or bags.It is also essential to wash the genital area with mild soap and warm water. Avoid using harsh soaps or perfumed products as they can irritate the skin. Wiping from front to back is also recommended to avoid spreading bacteria from the anus to the vagina.Clothing also plays a significant role in maintaining cleanliness during periods. Wearing loose, comfortable clothes made of breathable fabric such as cotton can help prevent sweat buildup and reduce odors. Dark-colored bottoms can also help avoid visible stains.Aside from changing pads or tampons, regular bathing or showering is also essential during periods. A warm shower can help ease cramps and reduce bloating, while also keeping the body clean and fresh.Lastly, practicing good hygiene habits such as washing hands before and after changing pads or tampons, using separate towels, and avoiding shared items such as toilets and baths can also prevent the spread of bacteria.In conclusion, staying clean and fresh during periods is crucial for good hygiene and health. Regularly changing pads or tampons, washing the genital area, wearing comfortable clothing, taking regular showers, and practicing good hygiene habits can help women feel more comfortable and confident during their menstrual cycle.</string>
+
+    <string name="title_text">BMI Calculator</string>
+    <string name="weight_counter_txt">50</string>
+    <string name="age_counter_txt">25</string>
+    <string name="weight_title_txt">Weight (kg)</string>
+    <string name="age_title_txt">Age</string>
+    <string name="height_title_txt">5 feet 4 inches </string>
+    <string name="button_text">Calculate</string>
+    <string name="button2_text">Calculate Again</string>
+    <string name="ft">ft</string>
+    <string name="in">in</string>
+    <string name="event">Events</string>
+    <string name="height">Height</string>
+    <string name="YourBmiText">Your BMI</string>
+    <string name="bmiValue">20.5</string>
+    <string name="bmiTips">You are underweight So you may need to put on some weight.</string>
+    <string name="all_records_will_be_shown_below">All Records will be shown below</string>
+    <string-array name="tips_array">
+        <item>You are severely underweight. It is a sign that you\'re not eating enough or you may be ill.</item>
+        <item>You are underweight So you may need to put on some weight. </item>
+        <item>You are at a healthy weight for your height. You lower your risk of developing serious health problems.</item>
+        <item>You are slightly overweight. You may be advised to lose some weight for health reasons.</item>
+        <item>You are heavily overweight. Your health may be at risk if you do not lose weight.</item>
+    </string-array>
 </resources>

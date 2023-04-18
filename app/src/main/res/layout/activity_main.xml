@@ -43,6 +43,7 @@
                     android:contentDescription="@string/image"
                     android:padding="10dp"
                     android:src="@drawable/ic_back"
+                    android:visibility="invisible"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:ignore="ImageContrastCheck" />
@@ -52,10 +53,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginStart="20dp"
                     android:fontFamily="@font/quicksand_bold"
                     android:text="Input form"
-                    android:textColor="@color/pink_200"
+                    android:textColor="@color/use_pink"
                     android:textSize="25sp" />
 
             </LinearLayout>
@@ -66,7 +66,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15sp"
                 android:fontFamily="@font/quicksand_bold"
-                android:text="Estimate Days Of Ovulation"
+                android:text="Length of cycle"
                 android:textColor="@color/black"
                 android:textSize="16sp" />
 
@@ -145,7 +145,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15sp"
                 android:fontFamily="@font/quicksand_bold"
-                android:text="Height"
+                android:text="Height (In cm)"
                 android:textColor="@color/black"
                 android:textSize="16sp" />
 
@@ -172,7 +172,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15sp"
                 android:fontFamily="@font/quicksand_bold"
-                android:text="Weight"
+                android:text="Weight (In KG)"
                 android:textColor="@color/black"
                 android:textSize="16sp" />
 
@@ -198,11 +198,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15sp"
                 android:fontFamily="@font/quicksand_bold"
-                android:text="BMI"
+                android:text="Previous date of period."
                 android:textColor="@color/black"
                 android:textSize="16sp" />
 
-            <EditText
+            <TextView
                 android:id="@+id/BMI"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -210,7 +210,8 @@
                 android:background="@drawable/bg_edt_text"
                 android:ems="10"
                 android:gravity="start|top"
-                android:hint="Enter"
+                android:hint="Tap to select"
+                android:editable="false"
                 android:importantForAutofill="no"
                 android:inputType="numberDecimal"
                 android:padding="15dp"
@@ -227,7 +228,7 @@
                 android:layout_marginEnd="20dp"
                 android:layout_marginBottom="35dp"
                 android:background="@drawable/bg_card_red"
-                android:backgroundTint="@color/pink_200"
+                android:backgroundTint="@color/use_pink"
                 android:fontFamily="@font/quicksand_bold"
                 android:gravity="center"
                 android:paddingTop="15dp"

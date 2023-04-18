@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/gentle"
+            style="@style/Widget.Neumorph.CardView"
+            android:layout_width="150dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/neumorphCardView"
+            app:neumorph_backgroundColor="@color/white"
+            app:neumorph_inset="20dp"
+            app:neumorph_insetBottom="5dp"
+            app:neumorph_insetEnd="1dp"
+            app:neumorph_insetStart="1dp"
+            app:neumorph_insetTop="5dp"
+            app:neumorph_shadowColorDark="@color/pink_50"
+            app:neumorph_shadowColorLight="@color/pink_50"
+            app:neumorph_shadowElevation="5dp"
+            app:neumorph_shapeType="flat"
+            app:neumorph_strokeColor="@color/pink_200"
+            app:neumorph_strokeWidth="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/image"
+                    android:src="@drawable/ic_gentle" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_card_red"
+                    android:backgroundTint="@color/pink_100"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Be Gentle"
+                    android:textColor="@color/use_blue_blue"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/cook"
+            style="@style/Widget.Neumorph.CardView"
+            android:layout_width="150dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/neumorphCardView"
+            app:neumorph_backgroundColor="@color/white"
+            app:neumorph_inset="20dp"
+            app:neumorph_insetBottom="5dp"
+            app:neumorph_insetEnd="1dp"
+            app:neumorph_insetStart="1dp"
+            app:neumorph_insetTop="5dp"
+            app:neumorph_shadowColorDark="@color/pink_50"
+            app:neumorph_shadowColorLight="@color/pink_50"
+            app:neumorph_shadowElevation="5dp"
+            app:neumorph_shapeType="flat"
+            app:neumorph_strokeColor="@color/pink_200"
+            app:neumorph_strokeWidth="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/image"
+                    android:src="@drawable/ic_cook" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_card_red"
+                    android:backgroundTint="@color/pink_100"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Cook For Her"
+                    android:textColor="@color/use_blue_blue"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/listen"
+            style="@style/Widget.Neumorph.CardView"
+            android:layout_width="150dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/neumorphCardView"
+            app:neumorph_backgroundColor="@color/white"
+            app:neumorph_inset="20dp"
+            app:neumorph_insetBottom="5dp"
+            app:neumorph_insetEnd="1dp"
+            app:neumorph_insetStart="1dp"
+            app:neumorph_insetTop="5dp"
+            app:neumorph_shadowColorDark="@color/pink_50"
+            app:neumorph_shadowColorLight="@color/pink_50"
+            app:neumorph_shadowElevation="5dp"
+            app:neumorph_shapeType="flat"
+            app:neumorph_strokeColor="@color/pink_200"
+            app:neumorph_strokeWidth="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/image"
+                    android:src="@drawable/ic_listen" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_card_red"
+                    android:backgroundTint="@color/pink_100"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Listen To Her"
+                    android:textColor="@color/use_blue_blue"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/atten"
+            style="@style/Widget.Neumorph.CardView"
+            android:layout_width="150dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/neumorphCardView"
+            app:neumorph_backgroundColor="@color/white"
+            app:neumorph_inset="20dp"
+            app:neumorph_insetBottom="5dp"
+            app:neumorph_insetEnd="1dp"
+            app:neumorph_insetStart="1dp"
+            app:neumorph_insetTop="5dp"
+            app:neumorph_shadowColorDark="@color/pink_50"
+            app:neumorph_shadowColorLight="@color/pink_50"
+            app:neumorph_shadowElevation="5dp"
+            app:neumorph_shapeType="flat"
+            app:neumorph_strokeColor="@color/pink_200"
+            app:neumorph_strokeWidth="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/image"
+                    android:src="@drawable/ic_atten" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_card_red"
+                    android:backgroundTint="@color/pink_100"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Be Attentive"
+                    android:textColor="@color/use_blue_blue"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/pat"
+            style="@style/Widget.Neumorph.CardView"
+            android:layout_width="150dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/neumorphCardView"
+            app:neumorph_backgroundColor="@color/white"
+            app:neumorph_inset="20dp"
+            app:neumorph_insetBottom="5dp"
+            app:neumorph_insetEnd="1dp"
+            app:neumorph_insetStart="1dp"
+            app:neumorph_insetTop="5dp"
+            app:neumorph_shadowColorDark="@color/pink_50"
+            app:neumorph_shadowColorLight="@color/pink_50"
+            app:neumorph_shadowElevation="5dp"
+            app:neumorph_shapeType="flat"
+            app:neumorph_strokeColor="@color/pink_200"
+            app:neumorph_strokeWidth="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/image"
+                    android:src="@drawable/ic_patient" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_card_red"
+                    android:backgroundTint="@color/pink_100"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Be Patient"
+                    android:textColor="@color/use_blue_blue"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </soup.neumorphism.NeumorphCardView>
+
+    </LinearLayout>
+</HorizontalScrollView>

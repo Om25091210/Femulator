@@ -18,6 +18,8 @@ import com.alpha.femulator.Onboarding.IntroViewPagerAdapter;
 import com.alpha.femulator.Onboarding.ScreenItem;
 import com.alpha.femulator.Onboarding.joinus;
 import com.google.android.material.tabs.TabLayout;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,6 +30,8 @@ public class Splash extends AppCompatActivity {
     IntroViewPagerAdapter introViewPagerAdapter ;
     TabLayout tabIndicator;
     Button btnNext;
+    FirebaseAuth auth;
+    FirebaseUser user;
     int position = 0 ;
     Button btnGetStarted;
     Animation btnAnim ;
@@ -42,7 +46,8 @@ public class Splash extends AppCompatActivity {
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
         window.setStatusBarColor(ContextCompat.getColor(Splash.this, R.color.white));
 
-
+        auth=FirebaseAuth.getInstance();
+        user=auth.getCurrentUser();
         // ini views
         btnNext = findViewById(R.id.btn_next);
         btnGetStarted = findViewById(R.id.btn_get_started);
@@ -92,7 +97,7 @@ public class Splash extends AppCompatActivity {
         // Get Started button click listener
         btnGetStarted.setOnClickListener(v -> {
             //open main activity
-            Intent mainActivity = new Intent(getApplicationContext(), Home_user.class);
+            Intent mainActivity = new Intent(getApplicationContext(), joinus.class);
             startActivity(mainActivity);
             // also we need to save a boolean value to storage so next time when the user run the app
             // we could know that he is already checked the intro screen activity
@@ -118,30 +123,21 @@ public class Splash extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-/*
-        //TODO: shared preference check krna hai fir home....
-        //Authorizing user to access the app...by saving locally...
-        boolean is_authorized=getSharedPreferences("Authorized_for_Access",MODE_PRIVATE)
-                .getBoolean("is_Authorized_to_access_the_app",false);
 
-        boolean is_first_time=getSharedPreferences("Open_once_interest101",MODE_PRIVATE)
-                .getBoolean("is_opened_once101",false);
-
-        if(is_first_time){ // firebase auth
-            *//*if(is_authorized){
-                if(is_opened_interest){
-                    Intent mainActivity = new Intent(getApplicationContext(),Home.class );
-                    startActivity(mainActivity);
-                    finish();
-                }
-            }
-            else{
-                Intent mainActivity = new Intent(getApplicationContext(),login.class );
+        user= auth.getCurrentUser();
+        if(user!=null){
+            String filled=getSharedPreferences("FORM",MODE_PRIVATE)
+                    .getString("form_filled","");
+            if(filled.equals("yes")) {
+                Intent mainActivity = new Intent(getApplicationContext(), Home_user.class);
                 startActivity(mainActivity);
                 finish();
-            }*//*
-
-        }*/
-
+            }
+            else{
+                Intent mainActivity = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(mainActivity);
+                finish();
+            }
+        }
     }
 }

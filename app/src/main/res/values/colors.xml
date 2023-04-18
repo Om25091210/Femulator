@@ -365,4 +365,30 @@
     <color name="light_four">#F8E89D</color>
     <color name="light_yellow_bg">#EEF88D</color>
     <color name="message_input_button_inactive">#88898b</color>
+
+    <color name="lightColor">#DAFFFFFF</color>
+
+    <color name="textColorPrimary">#212121</color>
+    <color name="textColorSecondary">#c4747474</color>
+
+    <color name="severeUnderWeight">@color/md_blue_800</color>
+    <color name="underWeight">@color/md_blue_400</color>
+    <color name="colorSecondary">#2CA1BC</color>
+    <color name="normalWeight">@color/colorSecondary</color>
+    <color name="overWeight">@color/md_amber_600</color>
+    <color name="obesityClass1">@color/md_amber_900</color>
+    <color name="obesityClass2">@color/md_red_500</color>
+    <color name="obesityClass3">@color/md_red_800</color>
+
+    <color name="bg_layer_2">#323232</color>
+    <color name="bg_layer_3">#525252</color>
+    <color name="bg_layer_4">#414141</color>
+    <color name="bg_layer_5">#313131</color>
+    <color name="text_color">#eeeeee</color>
+    <color name="red">#f51b00</color>
+    <color name="orange">#f05e23</color>
+    <color name="green">#008000</color>
+
+    <color name="infoColor">@color/md_blue_grey_900</color>
+    <color name="yourBmiColor">@color/md_grey_600</color>
 </resources>

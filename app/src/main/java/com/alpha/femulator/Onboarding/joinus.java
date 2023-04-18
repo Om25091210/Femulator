@@ -11,7 +11,7 @@ import soup.neumorphism.NeumorphCardView;
 
 public class joinus extends AppCompatActivity {
 
-    NeumorphCardView neumorphCardView;
+    NeumorphCardView neumorphCardView,neumorphCardView2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +20,13 @@ public class joinus extends AppCompatActivity {
         neumorphCardView=findViewById(R.id.neumorphCardView);
         neumorphCardView.setOnClickListener(v->{
             Intent mainActivity = new Intent(getApplicationContext(), login.class);
+            startActivity(mainActivity);
+            finish();
+        });
+
+        neumorphCardView2=findViewById(R.id.neumorphCardView2);
+        neumorphCardView2.setOnClickListener(v->{
+            Intent mainActivity = new Intent(getApplicationContext(), enter_code.class);
             startActivity(mainActivity);
             finish();
         });
